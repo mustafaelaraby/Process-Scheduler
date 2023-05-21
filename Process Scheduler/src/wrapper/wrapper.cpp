@@ -29,7 +29,8 @@ void Wrapper::Run()
 		case SILENT:runSilent(); break;
 		default:runStep_by_step();
 		}
-		animateProgressBar(30, 100, "Well dude!!  do you want to simulate again (y or n):");
+		animateProgressBar(30, 100, "Well dude!!");
+		std::cout<<"  do you want to simulate again (y or n): ";
 		std::cin >> ch;
 		switch (ch)
 		{
