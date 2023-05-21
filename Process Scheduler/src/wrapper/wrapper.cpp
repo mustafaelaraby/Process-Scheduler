@@ -14,17 +14,31 @@ GUI* Wrapper::getGUI() const
 void Wrapper::Run()
 {
 	p_gui->start();
-	file = p_gui->getfile();
-	Mode mode = p_gui->getMode();
-	switch (mode)
+
+	char ch;
+	bool go = true;
+
+	while (go)
 	{
-	case INTERACTIVE:runInteractive(); break;
-	case STEP_BY_STEP:runStep_by_step(); break;
-	case SILENT:runSilent(); break;
-	default:runStep_by_step();
+		file = p_gui->getfile();
+		Mode mode = p_gui->getMode();
+		switch (mode)
+		{
+		case INTERACTIVE:runInteractive(); break;
+		case STEP_BY_STEP:runStep_by_step(); break;
+		case SILENT:runSilent(); break;
+		default:runStep_by_step();
+		}
+		animateProgressBar(30, 100, "Well dude!!  do you want to simulate again (y or n):");
+		std::cin >> ch;
+		switch (ch)
+		{
+		case ('y' | 'Y'):go = true; break;
+		case ('n' | 'N'):go = false; break;
+		default:break;
+		}
 	}
 
-	animateProgressBar(30, 100, "Well dude!!");
 }
 
 void Wrapper::runInteractive()
