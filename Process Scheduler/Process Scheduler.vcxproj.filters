@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\scheduler\scheduler.cpp" />
+    <ClCompile Include="src\processors\FCFS\FCFS.cpp" />
+    <ClCompile Include="src\processors\Round_Robin\Round_Robin.cpp" />
+    <ClCompile Include="src\processors\SJF\SJF.cpp" />
+    <ClCompile Include="src\gui\gui.cpp" />
+    <ClCompile Include="src\wrapper\wrapper.cpp" />
+    <ClCompile Include="libs\Data Structures\BSTree\Node\Node.cpp" />
+    <ClCompile Include="libs\Data Structures\BSTree\BSTree.cpp" />
+    <ClCompile Include="libs\helpers\helpers.cpp" />
+    <ClCompile Include="src\Process\Process.cpp" />
+    <ClCompile Include="src\processors\EDF\EDF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\scheduler\scheduler.h" />
+    <ClInclude Include="src\processors\FCFS\FCFS.h" />
+    <ClInclude Include="src\processors\Round_Robin\Round_Robin.h" />
+    <ClInclude Include="src\processors\SJF\SJF.h" />
+    <ClInclude Include="src\gui\gui.h" />
+    <ClInclude Include="src\wrapper\wrapper.h" />
+    <ClInclude Include="libs\Data Structures\BSTree\Node\Node.h" />
+    <ClInclude Include="libs\Data Structures\BSTree\BSTree.h" />
+    <ClInclude Include="libs\helpers\helpers.h" />
+    <ClInclude Include="src\processors\processor\processor.h" />
+    <ClInclude Include="src\scheduler\stdafx.h" />
+    <ClInclude Include="libs\Data Structures\Linked_List\Linked_List.h" />
+    <ClInclude Include="libs\Data Structures\Vector\Vector.h" />
+    <ClInclude Include="libs\Data Structures\Linked Queue\Node.h" />
+    <ClInclude Include="libs\Data Structures\Linked Queue\Linked_Queue.h" />
+    <ClInclude Include="src\Process\Process.h" />
+    <ClInclude Include="src\processors\FCFS\stdafx.h" />
+    <ClInclude Include="src\processors\Round_Robin\stdafx.h" />
+    <ClInclude Include="src\processors\SJF\stdafx.h" />
+    <ClInclude Include="src\wrapper\stdafx.h" />
+    <ClInclude Include="src\Process\stdafx.h" />
+    <ClInclude Include="src\gui\stdafx.h" />
+    <ClInclude Include="libs\Data Structures\Priority_Queue\Priority_Queue.h" />
+    <ClInclude Include="libs\Data Structures\Queue\Queue.h" />
+    <ClInclude Include="libs\Data Structures\Stack\Stack.h" />
+    <ClInclude Include="src\processors\EDF\EDF.h" />
+    <ClInclude Include="src\processors\EDF\stdafx.h" />
+  </ItemGroup>
+</Project>
