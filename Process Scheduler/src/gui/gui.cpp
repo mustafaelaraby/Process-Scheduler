@@ -50,7 +50,7 @@ void GUI::showNew(Queue<Process*> new_list)
 	int idWidth = 10;
 	int arrivalWidth = 10;
 	int cpuWidth = 10;
-
+	
 	// Print the table header
 	printf("╔══════════╦══════════╦══════════╗\n");
 	printf("║ %-*s ║ %-*s ║ %-*s ║\n", idWidth - 2, "ID", arrivalWidth - 2, "Arrival", cpuWidth - 2, "CPU");
